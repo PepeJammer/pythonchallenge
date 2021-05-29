@@ -1,7 +1,6 @@
 import requests, re
 from bs4 import BeautifulSoup
 
-
 def getParam(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'html.parser').prettify()
